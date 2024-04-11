@@ -24,6 +24,9 @@
 
 ## [Java 13](https://www.baeldung.com/java-13-new-features)
 
+- Switch expressions with return
+- Text blocks
+
 ## References
 
 - https://advancedweb.hu/new-language-features-since-java-8-to-21/#allow-private-methods-in-interfaces
