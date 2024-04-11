@@ -1,4 +1,4 @@
-package io.automationhacks._01_type_inference;
+package io.automationhacks.java10._01_type_inference;
 
 import static com.google.common.truth.Truth.assertWithMessage;
 
@@ -11,8 +11,13 @@ import org.testng.annotations.Test;
 public class TypeInferenceTest {
     private final Logger logger = LoggerFactory.getLogger(TypeInferenceTest.class);
 
+    // Does not work for member variables
+    // Below is a compilation error
+    // var lastName = "Hacks";
+
     @Test
     public void testTypeInference() {
+        // Only available for local variables
         var name = "AutomationHacks";
         logger.info("Name: %s".formatted(name));
 
