@@ -1,6 +1,6 @@
 # Compiled class file
-build/*
-out/*
+build/
+out/
 *.class
 
 # Log file
@@ -25,7 +25,5 @@ out/*
 hs_err_pid*
 replay_pid*
 
-
-# User-specific stuff
-.idea/*
-
+.idea
+.gradle
