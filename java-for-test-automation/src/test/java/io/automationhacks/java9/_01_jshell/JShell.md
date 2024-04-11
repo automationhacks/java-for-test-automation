@@ -1,3 +1,8 @@
+# Jshell
+
+Introduced in Java 9, JShell is an interactive REPL (Read-Eval-Print Loop) tool that allows us to execute Java code
+snippets and get immediate results. It is a great tool for learning Java, testing small code snippets, and prototyping.
+
 ```shell
 ➜  java-for-test-automation git:(main) jshell
 |  Welcome to JShell -- Version 21.0.2

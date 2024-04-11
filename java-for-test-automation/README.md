@@ -2,16 +2,20 @@
 
 ## [Java 9](https://www.baeldung.com/new-java-9)
 
-- New HTTP client
 - JShell
 - Private methods in Interface
 
-## Java 10
+## [Java 10](https://www.baeldung.com/java-10-overview)
 
 - Local Type inference
 - Unmodifiable collections
 
-## Java 11
+## [Java 11](https://www.baeldung.com/java-11-new-features)
+
+- HTTP client
+- String methods
+- File methods
+- Local variable syntax for lambda parameters
 
 ## References
 
@@ -19,3 +23,4 @@
 - https://advancedweb.hu/a-categorized-list-of-all-java-and-jvm-features-since-jdk-8-to-21/#new-language-features
 - https://www.baeldung.com/new-java-9
 - https://www.baeldung.com/java-10-overview
+- https://www.baeldung.com/java-11-new-features

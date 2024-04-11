@@ -1,8 +1,9 @@
-package io.automationhacks.java9._03_private_methods_in_interface;
+package io.automationhacks.java9._02_private_methods_in_interface;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+// Introduced in Java 9
 public interface PrivateMethodsInInterface {
     Logger logger = LoggerFactory.getLogger(PrivateMethodsInInterface.class);
 
