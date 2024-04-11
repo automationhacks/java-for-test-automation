@@ -1,4 +1,6 @@
 # Compiled class file
+build/*
+out/*
 *.class
 
 # Log file
@@ -23,4 +25,7 @@
 hs_err_pid*
 replay_pid*
 
-.idea/
+
+# User-specific stuff
+.idea/*
+
