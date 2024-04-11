@@ -6,6 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.Test;
 
+// Introduced in Java 10
 // Source: https://www.baeldung.com/java-10-local-variable-type-inference
 public class TypeInferenceTest {
     private final Logger logger = LoggerFactory.getLogger(TypeInferenceTest.class);
