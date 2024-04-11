@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import java.util.Set;
 
 public class SwitchExpressions {
-    private Logger logger = LoggerFactory.getLogger(SwitchExpressions.class);
+    private final Logger logger = LoggerFactory.getLogger(SwitchExpressions.class);
 
     @Test
     public void testSwitchExpressionsForHttpCodes() {
@@ -22,7 +22,7 @@ public class SwitchExpressions {
                         default -> "Unknown";
                     };
 
-            System.out.printf("Code: %d Message: %s%n", code, message);
+            logger.info("Code: %d Message: %s%n".formatted(code, message));
         }
     }
 }
