@@ -15,6 +15,7 @@ public class PatternMatchingInstanceOf {
 
     private static void patternMatchAndAssert(Object obj) {
         if (obj instanceof String str) {
+            // The compiler will automatically inject the typecasted String s variable for us.
             System.out.println("String length: " + str.length());
         } else {
             System.out.println("Not a String");
