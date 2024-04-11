@@ -12,7 +12,6 @@ repositories {
 dependencies {
     testImplementation 'com.google.truth:truth:1.4.2'
     testImplementation 'org.testng:testng:7.10.1'
-    // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
     implementation 'org.slf4j:slf4j-api:2.0.12'
     implementation 'org.slf4j:slf4j-simple:2.0.12'
 }
