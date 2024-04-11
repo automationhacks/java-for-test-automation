@@ -17,6 +17,11 @@
 - File methods
 - Local variable syntax for lambda parameters
 
+## [Java 12](https://www.baeldung.com/java-12-new-features)
+
+- Switch expressions
+- Pattern matching for instanceof
+
 ## References
 
 - https://advancedweb.hu/new-language-features-since-java-8-to-21/#allow-private-methods-in-interfaces
