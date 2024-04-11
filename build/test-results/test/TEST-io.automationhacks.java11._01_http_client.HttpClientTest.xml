@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.automationhacks.java11._01_http_client.HttpClientTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-04-11T09:03:04" hostname="2315-X1" time="1.369">
+  <properties/>
+  <testcase name="testHttpClient" classname="io.automationhacks.java11._01_http_client.HttpClientTest" time="1.369"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO io.automationhacks.java11._01_http_client.HttpClientTest - Response: {
+  "args": {},
+  "headers": {
+    "x-forwarded-proto": "https",
+    "x-forwarded-port": "443",
+    "host": "postman-echo.com",
+    "x-amzn-trace-id": "Root=1-6617a74a-76fcf7f21ada38c722079020",
+    "user-agent": "Java-http-client/21.0.2"
+  },
+  "url": "https://postman-echo.com/get"
+}
+]]></system-err>
+</testsuite>
