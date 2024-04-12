@@ -19,13 +19,16 @@
 
 ## [Java 12](https://www.baeldung.com/java-12-new-features)
 
-- Switch expressions
 - Pattern matching for instanceof
 
 ## [Java 13](https://www.baeldung.com/java-13-new-features)
 
-- Switch expressions with return
 - Text blocks
+
+## [Java 14](https://www.baeldung.com/java-14-new-features)
+
+- Switch expressions with return
+- Text blocks with escape chars
 
 ## References
 
@@ -36,3 +39,4 @@
 - https://www.baeldung.com/java-11-new-features
 - https://www.baeldung.com/java-12-new-features
 - https://www.baeldung.com/java-13-new-features
+- https://www.baeldung.com/java-14-new-features

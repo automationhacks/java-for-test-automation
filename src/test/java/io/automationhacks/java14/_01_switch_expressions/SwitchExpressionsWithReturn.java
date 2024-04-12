@@ -1,4 +1,4 @@
-package io.automationhacks.java13._01_switch_expressions_jep_354;
+package io.automationhacks.java14._01_switch_expressions;
 
 
 import org.testng.annotations.Test;
