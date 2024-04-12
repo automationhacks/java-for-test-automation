@@ -30,4 +30,22 @@ public class RecordsTest {
                 .that(userCredentials.password())
                 .isEqualTo(userCredentials2.password());
     }
+
+    @Test
+    public void recordsAsInnerClasses() {
+
+        class OuterClass {
+            class InnerClass {
+                final UserCredentials userCredentials = new UserCredentials("admin", "admin");
+            }
+        }
+
+        OuterClass outerClass = new OuterClass();
+        OuterClass.InnerClass innerClass = outerClass.new InnerClass();
+        UserCredentials userCredentials = innerClass.userCredentials;
+
+        assertWithMessage("User name was not correct")
+                .that(userCredentials.userName())
+                .isEqualTo("admin");
+    }
 }
