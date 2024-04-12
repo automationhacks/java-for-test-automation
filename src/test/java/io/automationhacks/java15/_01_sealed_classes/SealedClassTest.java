@@ -5,6 +5,15 @@ import static com.google.common.truth.Truth.assertWithMessage;
 import org.testng.annotations.Test;
 
 public class SealedClassTest {
+    /**
+     * Sealed classes allow modeling Domain Possibilities with a clean inheritance hierarchy.
+     *
+     * <p><b>Benefits of Sealed Classes for testing:</b>
+     * <li>Clarity: Sealed classes make it clear which subclasses are valid. Test data is less
+     *     error-prone.
+     * <li>Security: Prevents accidental misuse by disallowing unknown subclasses.
+     * <li>Readable Tests: E2E tests become more self-explanatory due to the restricted inheritance.
+     */
     @Test
     public void testSealedClasses() {
         var john = new Employee(1, "Engineering");
