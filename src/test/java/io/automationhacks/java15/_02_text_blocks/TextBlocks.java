@@ -1,4 +1,4 @@
-package io.automationhacks.java13._02_text_blocks;
+package io.automationhacks.java15._02_text_blocks;
 
 import static com.google.common.truth.Truth.assertWithMessage;
 

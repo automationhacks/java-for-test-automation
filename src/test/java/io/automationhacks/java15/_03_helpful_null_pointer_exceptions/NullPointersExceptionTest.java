@@ -1,4 +1,4 @@
-package io.automationhacks.java14._04_helpful_null_pointer_exceptions;
+package io.automationhacks.java15._03_helpful_null_pointer_exceptions;
 
 import org.testng.annotations.Test;
 
