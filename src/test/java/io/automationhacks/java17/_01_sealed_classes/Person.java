@@ -1,4 +1,4 @@
-package io.automationhacks.java15._01_sealed_classes;
+package io.automationhacks.java17._01_sealed_classes;
 
 // Sealed classes provide fine grained control over inheritance.
 // Sealed classes can be abstract or non-abstract.

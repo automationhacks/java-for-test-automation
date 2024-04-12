@@ -1,4 +1,4 @@
-package io.automationhacks.java14._03_records;
+package io.automationhacks.java16._02_records;
 
 // Records are immutable data transfer objects (DTO) with all args constructor and getters
 // Records do have some restrictions. they are always final, they cannot be

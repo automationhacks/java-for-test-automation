@@ -1,4 +1,4 @@
-package io.automationhacks.java14._03_records;
+package io.automationhacks.java16._02_records;
 
 import static com.google.common.truth.Truth.assertWithMessage;
 

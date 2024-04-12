@@ -17,26 +17,19 @@
 - File methods
 - Local variable syntax for lambda parameters
 
-## [Java 12](https://www.baeldung.com/java-12-new-features)
-
-- Switch expressions with returns (preview)
-- Pattern matching for `instanceof` (preview)
-
-## [Java 13](https://www.baeldung.com/java-13-new-features)
-
-- Text blocks (preview)
-
 ## [Java 14](https://www.baeldung.com/java-14-new-features)
 
 - Switch expressions with return
-- Text blocks with escape chars (preview)
-- Records
-- Null pointer exception log provide more details
 
 ## [Java 15](https://www.baeldung.com/java-15-new)
 
-- Records (preview)
-- Sealed classes (preview)
+- Text blocks
+- Helpful Null pointer exception log provide more details
+
+## [Java 16](https://www.baeldung.com/java-16-new-features)
+
+- Records
+- Pattern matching for instanceof
 
 ## References
 
@@ -49,3 +42,4 @@
 - https://www.baeldung.com/java-13-new-features
 - https://www.baeldung.com/java-14-new-features
 - https://www.baeldung.com/java-15-new
+- https://www.baeldung.com/java-16-new-features

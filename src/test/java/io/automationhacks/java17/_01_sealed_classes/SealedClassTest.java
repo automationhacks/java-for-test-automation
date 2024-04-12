@@ -1,4 +1,4 @@
-package io.automationhacks.java15._01_sealed_classes;
+package io.automationhacks.java17._01_sealed_classes;
 
 import static com.google.common.truth.Truth.assertWithMessage;
 

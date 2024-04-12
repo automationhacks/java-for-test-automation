@@ -1,4 +1,4 @@
-package io.automationhacks.java12._01_pattern_matching_instance_of;
+package io.automationhacks.java16._01_pattern_matching_instance_of;
 
 import org.testng.annotations.Test;
 
