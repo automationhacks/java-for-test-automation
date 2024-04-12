@@ -4,6 +4,10 @@ import static com.google.common.truth.Truth.assertWithMessage;
 
 import org.testng.annotations.Test;
 
+/**
+ * Records generate constructor, getter, toString, equals and hashCode automatically. They help to
+ * reduce boilerplate code in POJO
+ */
 public class RecordsTest {
     @Test
     public void testRecords() {

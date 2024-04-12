@@ -31,6 +31,11 @@
 - Switch expressions with return
 - Text blocks with escape chars (preview)
 - Records
+- Null pointer exception log provide more details
+
+## [Java 15](https://www.baeldung.com/java-15-new)
+
+
 
 ## References
 
@@ -42,3 +47,4 @@
 - https://www.baeldung.com/java-12-new-features
 - https://www.baeldung.com/java-13-new-features
 - https://www.baeldung.com/java-14-new-features
+- https://www.baeldung.com/java-15-new
