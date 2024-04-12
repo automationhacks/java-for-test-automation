@@ -19,16 +19,18 @@
 
 ## [Java 12](https://www.baeldung.com/java-12-new-features)
 
-- Pattern matching for instanceof
+- Switch expressions with returns (preview)
+- Pattern matching for `instanceof` (preview)
 
 ## [Java 13](https://www.baeldung.com/java-13-new-features)
 
-- Text blocks
+- Text blocks (preview)
 
 ## [Java 14](https://www.baeldung.com/java-14-new-features)
 
 - Switch expressions with return
-- Text blocks with escape chars
+- Text blocks with escape chars (preview)
+- Records
 
 ## References
 
