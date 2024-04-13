@@ -33,13 +33,14 @@ public class RecordsTest {
 
     @Test
     public void recordsAsInnerClasses() {
-
+        // With the release of Java 16, we can now define records as class members of inner classes
         class OuterClass {
             class InnerClass {
                 final UserCredentials userCredentials = new UserCredentials("admin", "admin");
             }
         }
 
+        // Below shows an example wherein a record can be accessed from an inner class
         OuterClass outerClass = new OuterClass();
         OuterClass.InnerClass innerClass = outerClass.new InnerClass();
         UserCredentials userCredentials = innerClass.userCredentials;

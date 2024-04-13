@@ -31,6 +31,8 @@
 - Records
 - Pattern matching for instanceof
 
+## [Java 17](https://www.baeldung.com/java-17-new-features)
+
 ## References
 
 - https://advancedweb.hu/new-language-features-since-java-8-to-21/#allow-private-methods-in-interfaces
@@ -43,3 +45,4 @@
 - https://www.baeldung.com/java-14-new-features
 - https://www.baeldung.com/java-15-new
 - https://www.baeldung.com/java-16-new-features
+- https://www.baeldung.com/java-17-new-features
