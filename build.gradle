@@ -16,6 +16,15 @@ dependencies {
     implementation 'org.slf4j:slf4j-simple:2.0.12'
 }
 
+compileJava {
+    options.compilerArgs += ['--enable-preview']
+}
+
+compileTestJava {
+    options.compilerArgs += ['--enable-preview']
+}
+
 test {
+    jvmArgs('--enable-preview')
     useTestNG()
 }
