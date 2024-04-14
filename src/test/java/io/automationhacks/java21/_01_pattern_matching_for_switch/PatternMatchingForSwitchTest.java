@@ -1,4 +1,4 @@
-package io.automationhacks.preview._01_pattern_matching_for_switch;
+package io.automationhacks.java21._01_pattern_matching_for_switch;
 
 import static com.google.common.truth.Truth.assertWithMessage;
 

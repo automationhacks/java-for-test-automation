@@ -17,6 +17,10 @@
 - File methods
 - Local variable syntax for lambda parameters
 
+## Java 12 - 13
+
+- No new language features
+
 ## [Java 14](https://www.baeldung.com/java-14-new-features)
 
 - Switch expressions with return
@@ -36,6 +40,19 @@
 - Sealed classes
 - Pseudo random number generator factory
 
+## Java 18 - 20
+
+- No new language features
+
+## [Java 21](https://www.baeldung.com/java-lts-21-new-features)
+
+- Pattern matching for switch 
+- Record patterns
+
+## Preview
+
+- Record patterns
+
 ## References
 
 - https://advancedweb.hu/new-language-features-since-java-8-to-21/#allow-private-methods-in-interfaces
@@ -49,3 +66,5 @@
 - https://www.baeldung.com/java-15-new
 - https://www.baeldung.com/java-16-new-features
 - https://www.baeldung.com/java-17-new-features
+- https://www.baeldung.com/java-20-new-features
+- https://www.baeldung.com/java-lts-21-new-features
