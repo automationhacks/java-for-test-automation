@@ -47,6 +47,8 @@
 ## [Java 21](https://www.baeldung.com/java-lts-21-new-features)
 
 - Pattern matching for switch 
+  - Support for null
+  - Support for adding conditional checks using `when` keyword
 - Record patterns
 
 ## Preview
