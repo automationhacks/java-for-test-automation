@@ -33,6 +33,9 @@
 
 ## [Java 17](https://www.baeldung.com/java-17-new-features)
 
+- Sealed classes
+- Pseudo random number generator factory
+
 ## References
 
 - https://advancedweb.hu/new-language-features-since-java-8-to-21/#allow-private-methods-in-interfaces
