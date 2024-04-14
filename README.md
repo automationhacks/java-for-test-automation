@@ -1,5 +1,18 @@
 # Java for Test automation
 
+## Why?
+
+Hey, folks! 👋🏼
+
+- Many teams still use Java 8 or Java 11 for testing, but Java has come a long way and evolved since then. The
+  latest LTS version of Java 21 has a bunch of cool features from other JVM languages and modern stuff too.
+- Upgrading to the latest version of Java can give testers a lot of new tools to work with. They can write more robust,
+  easy-to-maintain, and expressive automated tests.
+- In this repo, we'll go over the major language features in Java version 8 and later, and how we can use them to boost
+  our test automation.
+
+Excited? Let’s go. ⚡
+
 ## [Java 9](https://www.baeldung.com/new-java-9)
 
 - **JShell:** REPL for Java, allows for quick testing of code snippets
