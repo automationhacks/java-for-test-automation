@@ -13,6 +13,8 @@ Hey, folks! 👋🏼
 
 Excited? Let’s go. ⚡
 
+Please see the different packages in the repo for the code examples for each Java version.
+
 ## [Java 9](https://www.baeldung.com/new-java-9)
 
 - **JShell:** REPL for Java, allows for quick testing of code snippets
