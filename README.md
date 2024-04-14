@@ -50,10 +50,11 @@
   - Support for null
   - Support for adding conditional checks using `when` keyword
 - Record patterns
+- Virtual threads
 
 ## Preview
 
-- Record patterns
+- String templates
 
 ## References
 

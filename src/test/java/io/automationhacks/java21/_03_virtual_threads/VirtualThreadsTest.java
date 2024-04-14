@@ -1,4 +1,4 @@
-package io.automationhacks.preview._02_virtual_threads;
+package io.automationhacks.java21._03_virtual_threads;
 
 import org.testng.annotations.Test;
 
