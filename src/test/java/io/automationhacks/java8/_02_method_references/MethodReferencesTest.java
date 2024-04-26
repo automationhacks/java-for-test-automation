@@ -6,35 +6,49 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-record User(String name) {}
+class User {
+    private final String name;
+
+    public User(String name) {
+        this.name = name;
+    }
+
+    static boolean isRealUser(User user) {
+        return !user.name.isEmpty();
+    }
+
+    public boolean isLegalName(User user) {
+        return user.name.length() > 1;
+    }
+}
 
 public class MethodReferencesTest {
-    List<String> users = List.of("John", "Doe", "Jane", "", "Alice", "", "Bob", "Charlie");
+    // The list has some user who name are empty
+    List<User> users =
+            List.of(
+                    new User("John"),
+                    new User("Doe"),
+                    new User("Jane"),
+                    new User(""),
+                    new User("Alice"),
+                    new User(""));
 
     @Test
     public void testStaticMethodReferences() {
-
         // Using lambda expression
-        boolean emptyUsersFound = users.stream().anyMatch(user -> user.isEmpty());
-        // Using static method reference
-        // Syntax: ClassName::staticMethodName
-        boolean emptyUsersFoundUsingStaticMethodReference =
-                users.stream().anyMatch(String::isEmpty);
-
-        assertWithMessage("Empty users not found")
-                .that(emptyUsersFoundUsingStaticMethodReference)
-                .isEqualTo(emptyUsersFound);
+        var isRealUser = users.stream().anyMatch(u -> User.isRealUser(u));
+        // Using method references for static methods
+        var isRealUserMethodRef = users.stream().anyMatch(User::isRealUser);
+        assertWithMessage("Is real user does not match")
+                .that(isRealUserMethodRef)
+                .isEqualTo(isRealUser);
     }
 
     @Test
     public void testInstanceMethodForObjectOfAGivenType() {
-        var count = users.stream().filter(String::isEmpty).count();
-        assertWithMessage("Empty users count does not match").that(count).isEqualTo(2);
-    }
-
-    @Test
-    public void testMethodReferenceToConstructor() {
-        var newUsers = users.stream().map(User::new).toList();
-        assertWithMessage("Users do not have same size").that(newUsers).hasSize(users.size());
+        User user = new User("");
+        // Instance method reference - containingInstance::methodName
+        var isLegalName = users.stream().anyMatch(user::isLegalName);
+        assertWithMessage("Not a legal name").that(isLegalName).isTrue();
     }
 }
