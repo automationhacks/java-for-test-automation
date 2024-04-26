@@ -11,6 +11,8 @@ class TataNexon implements Vehicle {
     }
 }
 
+class ToyotaEtios implements Vehicle {}
+
 public class VehicleTest {
     @Test
     public void testInterfaceStaticInVehicle() {
@@ -21,6 +23,13 @@ public class VehicleTest {
 
     @Test
     public void testInterfaceDefaultInVehicle() {
+        var toyotaEtios = new ToyotaEtios();
+        String overview = toyotaEtios.getOverview();
+        assertWithMessage("Invalid vehicle overview").that(overview).isEqualTo("SUV from Toyota");
+    }
+
+    @Test
+    public void testInterfaceDefaultOverrideInVehicle() {
         var tataNexon = new TataNexon();
         String overview = tataNexon.getOverview();
         assertWithMessage("Invalid vehicle overview")
