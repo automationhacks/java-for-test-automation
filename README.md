@@ -15,6 +15,48 @@ Excited? Let’s go. ⚡
 
 Please see the different packages in the repo for the code examples for each Java version.
 
+## [Java 8](https://www.baeldung.com/java-8-new-features)
+
+- Interface default static methods
+
+```java
+public interface Vehicle {
+    // static cannot be overridden in the implementing class
+    // it is only available through and inside an interface
+    static String producer() {
+        return "Toyota";
+    }
+
+    default String getOverview() {
+        return "SUV from %s".formatted(producer());
+    }
+}
+```
+
+- Method references
+
+```java
+var isRealUserMethodRef = users.stream().anyMatch(User::isRealUser);
+```
+
+- Optional
+
+```java
+@Test
+public void optionalTest() {
+  Optional<String> optional = Optional.empty();
+  assertWithMessage("How did an empty optional become present 🤔?")
+          .that(optional.isPresent())
+          .isFalse();
+
+  String name = "automation hacks";
+  Optional<String> optionalName = Optional.of(name);
+  assertWithMessage("How did a present optional become empty 🤔?")
+          .that(optional.isPresent())
+          .isTrue();
+}
+```
+
 ## [Java 9](https://www.baeldung.com/new-java-9)
 
 - **JShell:** REPL for Java, allows for quick testing of code snippets
