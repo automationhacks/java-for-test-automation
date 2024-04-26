@@ -24,6 +24,7 @@ public class VehicleTest {
     @Test
     public void testInterfaceDefaultInVehicle() {
         var toyotaEtios = new ToyotaEtios();
+        // default method can be accessed via instance or implementing class
         String overview = toyotaEtios.getOverview();
         assertWithMessage("Invalid vehicle overview").that(overview).isEqualTo("SUV from Toyota");
     }
