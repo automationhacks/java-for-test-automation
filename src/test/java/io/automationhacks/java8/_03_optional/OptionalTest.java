@@ -95,4 +95,26 @@ public class OptionalTest {
     private static String getNullSafeStreet(Optional<User> optionalUser) {
         return optionalUser.map(User::getAddress).map(Address::getStreet).orElse("not specified");
     }
+
+    @Test(expectedExceptions = CustomException.class)
+    public void changeExceptionWithOptionalTest() throws CustomException {
+        // Pre Java 8
+
+        /*
+        String value = null;
+        String result = "";
+
+        try {
+            result = value.toUpperCase();
+        } catch (NullPointerException e) {
+            throw new CustomException();
+        }
+
+         */
+
+        // With optional, we can make above code concise and directly throw a custom exception
+        String value = null;
+        Optional<String> valueOpt = Optional.ofNullable(value);
+        String result = valueOpt.orElseThrow(CustomException::new).toUpperCase();
+    }
 }
