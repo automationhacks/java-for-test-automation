@@ -67,5 +67,35 @@ public class StreamTest {
     logger.info(String.join(",", filePathsWithUserDir));
   }
 
+  @Test
+  public void flatMappingUsingStreams() {
+    record Person(String name, List<String> moods) {}
+    var people =
+        List.of(
+            new Person("John", List.of("Angry", "Happy", "Sad")),
+            new Person("Jane", List.of("Adventurous", "Calm")));
 
+    // We can use flatMap to convert a nested list into a flat list
+    var flatMoods = people.stream().flatMap(elem -> elem.moods.stream());
+    String moods = String.join(", ", flatMoods.toList());
+    logger.info(moods);
+    assertWithMessage("Moods don't match")
+        .that(moods)
+        .isEqualTo("Angry, Happy, Sad, Adventurous, Calm");
+  }
+
+  @Test
+  public void matchingUsingStreams() {
+    var empty = List.of("");
+    assertWithMessage("").that(empty.stream().anyMatch(String::isEmpty)).isTrue();
+
+    var names = List.of("Tango", "Charlie");
+
+    assertWithMessage("Names do not contain 'a'")
+        .that(names.stream().allMatch(elem -> elem.contains("a")))
+        .isTrue();
+    assertWithMessage("Names contain 'x'")
+        .that(names.stream().noneMatch(elem -> elem.contains("x")))
+        .isTrue();
+  }
 }
