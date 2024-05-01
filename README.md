@@ -408,6 +408,7 @@ I read the following articles to understand the new features in Java versions, p
 free to check them out for more awesome Java content
 
 - [Java 8](https://www.baeldung.com/java-8-new-features)
+    - [Streams](https://www.baeldung.com/java-8-streams-introduction)
 - [Java 9](https://www.baeldung.com/new-java-9)
 - [Java 10](https://www.baeldung.com/java-10-overview)
 - [Java 11](https://www.baeldung.com/java-11-new-features)

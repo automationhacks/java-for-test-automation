@@ -3,13 +3,16 @@ package io.automationhacks.java8._04_streams;
 import static com.google.common.truth.Truth.assertThat;
 import static com.google.common.truth.Truth.assertWithMessage;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.random.RandomGeneratorFactory;
 import java.util.stream.Stream;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.Test;
 
+// https://www.baeldung.com/java-8-streams-introduction
 public class StreamTest {
   private final Logger logger = LoggerFactory.getLogger(StreamTest.class);
   private final List<String> names = Arrays.asList("Rob", "James", "Steve", "James");
@@ -97,5 +100,22 @@ public class StreamTest {
     assertWithMessage("Names contain 'x'")
         .that(names.stream().noneMatch(elem -> elem.contains("x")))
         .isTrue();
+  }
+
+  @Test
+  public void reduceUsingStreams() {
+    var randomNumbers = new ArrayList<Integer>();
+    RandomGeneratorFactory.of("Random").create().ints(10).forEach(randomNumbers::add);
+
+    var start = 10;
+
+    // Reduce takes a start value and then calls an accumulator method that would be applied on the
+    // previous value
+    // Here we use Integer::sum method reference but this can be expanded as below as well
+    // var total = numbers.reduce(start, (a, b) -> a + b);
+    var total = randomNumbers.stream().reduce(start, Integer::sum);
+    logger.info("Sum total: %s".formatted(total));
+
+    assertWithMessage("Total is not greater than 10").that(total).isNotNull();
   }
 }
