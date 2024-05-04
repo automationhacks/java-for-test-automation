@@ -6,11 +6,6 @@ import org.testng.annotations.Test;
 
 import java.util.function.Function;
 
-@FunctionalInterface
-interface IStringAppender {
-    String method(String string);
-}
-
 public class LambdaExpressionsTest {
 
     // appendStr is a higher order function since it can accept a lambda as an argument and invoke
