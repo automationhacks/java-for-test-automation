@@ -5,4 +5,17 @@ package io.automationhacks.java8._05_lambda_expressions;
 @FunctionalInterface
 public interface IStringAppender {
     String method(String string);
+
+    // We can have multiple default methods in a functional interface, however overusing defaults is
+    // not a good architectural decision
+    // We should use them for:
+    // 1. You need to add methods to an existing interface without breaking existing
+    // implementations.
+    // 2. It’s a compromise to maintain backward compatibility.
+    // 3. You’re upgrading interfaces without causing chaos.
+    default void aDefaultMethod() {}
+
+    default void anotherDefaultMethod() {}
+
+    default void yetAnotherDefaultMethod() {}
 }

@@ -38,7 +38,18 @@ public class LambdaExpressionsTest {
         // stringAppender is a function that accepts one argument and returns another string after
         // concatenation with a
         // hardcoded string
+
         IStringAppender stringAppender = param -> param + " from lambda function";
+
+        // Above could also have been expressed using an anonymous inner class while making the code
+        // verbose, lambda expressions are much more concise and easy to read
+
+        //        IStringAppender stringAppender = new IStringAppender() {
+        //            @Override
+        //            public String method(String param) {
+        //                return param + " from lambda function";
+        //            }
+        //        };
 
         // We can pass this lambda expression as an argument
         String result = appendStr("Hello", stringAppender);
