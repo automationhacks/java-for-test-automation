@@ -4,7 +4,7 @@ package io.automationhacks.java8._05_lambda_expressions;
 // by mistake and ensures this interface can ONLY have one method
 @FunctionalInterface
 public interface IStringAppender {
-    String method(String string);
+    String append(String string);
 
     // We can have multiple default methods in a functional interface, however overusing defaults is
     // not a good architectural decision
