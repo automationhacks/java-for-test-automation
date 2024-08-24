@@ -1,4 +1,4 @@
-package io.automationhacks.java8._02_method_references;
+package io.automationhacks.java08._02_method_references;
 
 import static com.google.common.truth.Truth.assertWithMessage;
 

@@ -1,4 +1,4 @@
-package io.automationhacks.java8._04_streams;
+package io.automationhacks.java08._04_streams;
 
 import static com.google.common.truth.Truth.assertThat;
 import static com.google.common.truth.Truth.assertWithMessage;

@@ -1,4 +1,4 @@
-package io.automationhacks.java8._03_optional;
+package io.automationhacks.java08._03_optional;
 
 import static com.google.common.truth.Truth.assertWithMessage;
 

@@ -1,4 +1,4 @@
-package io.automationhacks.java8._05_lambda_expressions;
+package io.automationhacks.java08._05_lambda_expressions;
 
 import static com.google.common.truth.Truth.assertWithMessage;
 

@@ -1,4 +1,4 @@
-package io.automationhacks.java9._02_private_methods_in_interface;
+package io.automationhacks.java09._02_private_methods_in_interface;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

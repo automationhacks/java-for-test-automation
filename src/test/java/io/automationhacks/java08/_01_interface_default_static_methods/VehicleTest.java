@@ -1,4 +1,4 @@
-package io.automationhacks.java8._01_interface_default_static_methods;
+package io.automationhacks.java08._01_interface_default_static_methods;
 
 import static com.google.common.truth.Truth.assertWithMessage;
 
